@@ -1,0 +1,6 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nov29-oldargocd-model-config
+data:
+  MODEL_ENDPOINT: "http://nov29-oldargocd-model-server:8001"

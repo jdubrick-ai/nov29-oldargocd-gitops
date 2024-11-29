@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: nov29-oldargocd-gitops
+  description: This is GitOps manifest for nov29-oldargocd   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: nov29-oldargocd
+    janus-idp.io/tekton: nov29-oldargocd 
+    backstage.io/kubernetes-id: nov29-oldargocd 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:nov29-oldargocd

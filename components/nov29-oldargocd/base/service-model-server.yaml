@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: nov29-oldargocd-model-server
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nov29-oldargocd-model-server
+  name: nov29-oldargocd-model-server
+spec:
+  ports:
+  - port: 8001
+    protocol: TCP
+    targetPort: 8001
+  selector:
+    app.kubernetes.io/instance: nov29-oldargocd-model-server

@@ -1,0 +1,16 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels: 
+    app.kubernetes.io/instance: nov29-oldargocd
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nov29-oldargocd 
+  name: nov29-oldargocd
+spec:
+  accessModes:
+    - ReadWriteOnce
+  volumeMode: Filesystem
+  resources:
+    requests:
+      storage: 100Gi

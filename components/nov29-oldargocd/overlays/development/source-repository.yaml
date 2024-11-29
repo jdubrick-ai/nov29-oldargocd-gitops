@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: nov29-oldargocd-repository
+spec:
+  url: https://github.com/jdubrick-ai/nov29-oldargocd
